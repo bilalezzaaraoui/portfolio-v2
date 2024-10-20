@@ -25,7 +25,7 @@ export const portfolioProjects = [
       { title: "Increased daily active users by 30% with gamified streaks and rewards" },
       { title: "Reduced churn rate by 25% through consistent course progression" },
     ],
-    link: "#",
+    link: "https://www.maxingus.com/",
     image: Showcase3,
   },
   {
@@ -37,7 +37,7 @@ export const portfolioProjects = [
       { title: "Collaborated with cross-functional teams for seamless feature integration" },
       { title: "Enhanced user experience through close collaboration with UX/UI teams" },
     ],
-    link: "#",
+    link: "https://boutique.orange.fr/internet/offres-fibre",
     image: Showcase2,
   },
   {
@@ -49,7 +49,7 @@ export const portfolioProjects = [
       { title: "Integrated third-party APIs and services to extend product functionalities" },
       { title: "Refactored legacy codebases, reducing technical debt and improving maintainability" },
     ],
-    link: "#",
+    link: "https://sofia-technologies.com/",
     image: Showcase1,
   },
 ];

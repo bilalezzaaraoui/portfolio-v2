@@ -132,14 +132,18 @@ export const Hero = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-8">
-          <Button variant="primary">
-            <span className="font-semibold">Explore My Work</span>
-            <ArrowDownIcon className="size-4" />
-          </Button>
-          <Button variant="secondary">
-            <span>👋</span>
-            <span className="font-semibold">Let&apos;s Connect</span>
-          </Button>
+          <a href="#projects">
+            <Button variant="primary">
+              <span className="font-semibold">Explore My Work</span>
+              <ArrowDownIcon className="size-4" />
+            </Button>
+          </a>
+          <a href="/Resume%20Bilal%20EZZAARAOUI.pdf" download="Resume Bilal EZZAARAOUI.pdf">
+            <Button variant="secondary">
+              <span>👋</span>
+              <span className="font-semibold">Download Resume</span>
+            </Button>
+          </a>
         </div>
       </div>
     </section>

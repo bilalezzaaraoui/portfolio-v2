@@ -2,10 +2,7 @@ import { ArrowUpRightIcon } from "@/assets";
 import Link from "next/link";
 
 const navItems = [
-  { href: "#", title: "YouTube" },
-  { href: "#", title: "Twitter" },
-  { href: "#", title: "Instagram" },
-  { href: "#", title: "LinkedIn" },
+  { href: "https://www.linkedin.com/in/bilalezzaa/", title: "LinkedIn" },
 ];
 
 export const Footer = () => {

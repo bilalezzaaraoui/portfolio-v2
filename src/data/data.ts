@@ -17,37 +17,37 @@ import {
 
 export const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Maxing Us",
+    year: "2024",
+    title: "AI-Powered Personal Improvement App - Side Hustle",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Improved facial scan accuracy by 45% through AI optimizations" },
+      { title: "Increased daily active users by 30% with gamified streaks and rewards" },
+      { title: "Reduced churn rate by 25% through consistent course progression" },
     ],
     link: "#",
     image: Showcase3,
   },
   {
-    company: "Innovative Co",
-    year: "2023",
-    title: "Light Saas Landing Page",
+    company: "Orange",
+    year: "2021 - 2024",
+    title: "Full-stack Developer",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "Improved application performance, reducing server response time by 35%" },
+      { title: "Collaborated with cross-functional teams for seamless feature integration" },
+      { title: "Enhanced user experience through close collaboration with UX/UI teams" },
     ],
     link: "#",
     image: Showcase2,
   },
   {
-    company: "Quantum Dynamics",
-    year: "2024",
-    title: "AI Startup Landing Page",
+    company: "SophiaTech Solutions",
+    year: "2020 - 2021",
+    title: "Front-end Developper",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Built responsive web applications using React, and Redux, improving client retention rates" },
+      { title: "Integrated third-party APIs and services to extend product functionalities" },
+      { title: "Refactored legacy codebases, reducing technical debt and improving maintainability" },
     ],
     link: "#",
     image: Showcase1,
@@ -70,36 +70,37 @@ export const tapeWords = [
 
 export const testimonials = [
   {
-    name: "Alex Turner",
-    position: "Marketing Manager @ TechStartups",
-    text: "Alex was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
+    name: "Jean Dupont",
+    position: "Product Owner @ Orange",
+    text: "Bilal's expertise in full-stack development was critical in optimizing our web applications. His ability to enhance performance while collaborating effectively with the team made a significant impact.",
     avatar: Avatar1,
   },
   {
-    name: "Olivia Green",
-    position: "Head of Design @ GreenLeaf",
-    text: "Working with Alex was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
+    name: "Sophie Martin",
+    position: "CTO @ SophiaTech Solutions",
+    text: "Bilal is a talented developer who greatly improved our product's technical infrastructure. His work on refactoring our codebase helped us reduce technical debt and improve maintainability.",
     avatar: Avatar2,
   },
   {
-    name: "Daniel White",
-    position: "CEO @ InnovateCo",
-    text: "Alex's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
+    name: "David Lefèvre",
+    position: "Project Manager @ EURECOM",
+    text: "Bilal played a key role in developing our internal tools. His backend expertise and attention to detail ensured that our services ran smoothly and efficiently. He was a pleasure to work with.",
     avatar: Avatar3,
   },
   {
-    name: "Emily Carter",
-    position: "Product Manager @ GlobalTech",
-    text: "Alex is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
+    name: "Marie Laurent",
+    position: "Lead UX Designer @ Orange",
+    text: "Bilal’s collaborative spirit and frontend development skills significantly enhanced the user experience on our platform. He always delivered clean and efficient code, making our designs come to life.",
     avatar: Avatar4,
   },
   {
-    name: "Michael Brown",
-    position: "Director of IT @ MegaCorp",
-    text: "Alex's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
+    name: "Luc Moreau",
+    position: "Lead Developer @ SophiaTech Solutions",
+    text: "Working with Bilal was seamless. His expertise in integrating APIs and improving our web app’s responsiveness was essential to the success of our projects.",
     avatar: Avatar5,
   },
 ];
+
 
 export const toolBoxItems = [
   { title: "Javascript", iconType: JavascriptIcon },

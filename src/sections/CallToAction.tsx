@@ -23,10 +23,12 @@ export const CallToAction = () => {
               </p>
             </div>
             <div>
-              <Button className="text-white bg-gray-900 gap-2 w-max border border-gray-900">
-                <span className="font-semibold">Contect Me</span>
-                <ArrowUpRightIcon className="size-4" />
-              </Button>
+              <a href="tel:+66985683858">
+                <Button className="text-white bg-gray-900 gap-2 w-max border border-gray-900">
+                  <span className="font-semibold">Contect Me</span>
+                  <ArrowUpRightIcon className="size-4" />
+                </Button>
+              </a>
             </div>
           </div>
         </div>

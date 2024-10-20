@@ -107,7 +107,7 @@ export const toolBoxItems = [
   { title: "HTML5", iconType: HtmlIcon },
   { title: "CSS3", iconType: CssIcon },
   { title: "React", iconType: ReactIcon },
-  { title: "Chorome", iconType: ChromeIcon },
+  { title: "Chrome", iconType: ChromeIcon },
   { title: "Github", iconType: GithubIcon },
 ];
 

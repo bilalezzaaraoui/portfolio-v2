@@ -127,7 +127,7 @@ export const Hero = () => {
           </h1>
           <p className="md:text-lg text-center text-white/60 mt-4">
             {`My name is Bilal Ezzaaraoui and i'm a full stack developper, specialized in transforming designs into functional,
-            high-performing performing web applications. Let&apos;s discuss your
+            high-performing performing web applications. Let's discuss your
             next project.`}
           </p>
         </div>

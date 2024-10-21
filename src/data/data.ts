@@ -22,8 +22,8 @@ export const portfolioProjects = [
     title: "AI-Powered Personal Improvement App - Coming soon",
     results: [
       { title: "Enhanced personalization with tailored improvement courses" },
-      { title: "Boosted user engagement by 50% with team challenges and competition" },
-      { title: "Optimized retention with rewarding progress tracking and gamified streaks" },
+      { title: "Boosted engagement by team challenges and competition" },
+      { title: "Developed with Expo and React Native" },
     ],
     link: "https://www.maxingus.com/",
     image: Showcase3,

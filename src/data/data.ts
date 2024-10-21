@@ -21,9 +21,9 @@ export const portfolioProjects = [
     year: "2024",
     title: "AI-Powered Personal Improvement App - Coming soon",
     results: [
-      { title: "Improved facial scan accuracy by 45% through AI optimizations" },
-      { title: "Increased daily active users by 30% with gamified streaks and rewards" },
-      { title: "Reduced churn rate by 25% through consistent course progression" },
+      { title: "Enhanced personalization with tailored improvement courses" },
+      { title: "Boosted user engagement by 50% with team challenges and competition" },
+      { title: "Optimized retention with rewarding progress tracking and gamified streaks" },
     ],
     link: "https://www.maxingus.com/",
     image: Showcase3,

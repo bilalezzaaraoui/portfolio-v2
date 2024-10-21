@@ -46,6 +46,7 @@ export const Projects = () => {
                   <Link
                     href={project.link}
                     className="btn btn-secondary text-gray-950 justify-center w-full mt-8 md:w-auto"
+                    target="_blank"
                   >
                     <span className="font-semibold">Visit Live Site</span>
                     <ArrowUpRightIcon className="size-4" />

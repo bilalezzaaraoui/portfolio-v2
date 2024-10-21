@@ -19,7 +19,7 @@ export const portfolioProjects = [
   {
     company: "Maxing Us",
     year: "2024",
-    title: "AI-Powered Personal Improvement App - Side Hustle",
+    title: "AI-Powered Personal Improvement App - Coming soon",
     results: [
       { title: "Improved facial scan accuracy by 45% through AI optimizations" },
       { title: "Increased daily active users by 30% with gamified streaks and rewards" },
@@ -29,8 +29,20 @@ export const portfolioProjects = [
     image: Showcase3,
   },
   {
+    company: "Luxeol",
+    year: "2022 - 2024",
+    title: "Front-end Developper",
+    results: [
+      { title: "Built responsive web applications using React, and Redux, improving client retention rates" },
+      { title: "Integrated third-party APIs and services to extend product functionalities" },
+      { title: "Refactored legacy codebases, reducing technical debt and improving maintainability" },
+    ],
+    link: "https://luxeol.com/",
+    image: Showcase2,
+  },
+  {
     company: "Orange",
-    year: "2021 - 2024",
+    year: "2020 - 2022",
     title: "Full-stack Developer",
     results: [
       { title: "Improved application performance, reducing server response time by 35%" },
@@ -38,18 +50,6 @@ export const portfolioProjects = [
       { title: "Enhanced user experience through close collaboration with UX/UI teams" },
     ],
     link: "https://boutique.orange.fr/internet/offres-fibre",
-    image: Showcase2,
-  },
-  {
-    company: "SophiaTech Solutions",
-    year: "2020 - 2021",
-    title: "Front-end Developper",
-    results: [
-      { title: "Built responsive web applications using React, and Redux, improving client retention rates" },
-      { title: "Integrated third-party APIs and services to extend product functionalities" },
-      { title: "Refactored legacy codebases, reducing technical debt and improving maintainability" },
-    ],
-    link: "https://sofia-technologies.com/",
     image: Showcase1,
   },
 ];

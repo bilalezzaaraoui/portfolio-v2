@@ -126,7 +126,7 @@ export const Hero = () => {
             Building Exceptional User Experiences
           </h1>
           <p className="md:text-lg text-center text-white/60 mt-4">
-            I specialize in transforming designs into functional,
+            My name is Bilal Ezzaaraoui and i'm a full stack developper, specialized in transforming designs into functional,
             high-performing performing web applications. Let&apos;s discuss your
             next project.
           </p>

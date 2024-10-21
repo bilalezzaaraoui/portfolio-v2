@@ -18,6 +18,7 @@ export const Footer = () => {
                 href={item.href}
                 key={index}
                 className="inline-flex items-center gap-1.5 group relative cursor-pointer"
+                target="_blank"
               >
                 <span className="font-semibold">{item.title}</span>
                 <ArrowUpRightIcon className="size-4" />

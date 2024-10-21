@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Calistoga } from "next/font/google";
 import "@/styles/globals.css";
 import { twMerge } from "tailwind-merge";
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const calistoga = Calistoga({
@@ -21,17 +22,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body
-        className={twMerge(
-          inter.variable,
-          calistoga.variable,
-          "bg-gray-900 text-white antialiased font-sans",
-        )}
-        suppressHydrationWarning
-      >
-        {children}
-      </body>
-    </html>
+    <>
+      <Analytics/>
+      <html lang="en" className="scroll-smooth">
+        <body
+          className={twMerge(
+            inter.variable,
+            calistoga.variable,
+            "bg-gray-900 text-white antialiased font-sans",
+          )}
+          suppressHydrationWarning
+        >
+          {children}
+        </body>
+      </html>
+    </>
   );
 }

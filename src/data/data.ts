@@ -70,35 +70,29 @@ export const tapeWords = [
 
 export const testimonials = [
   {
-    name: "Jean Dupont",
-    position: "Product Owner @ Orange",
-    text: "Bilal's expertise in full-stack development was critical in optimizing our web applications. His ability to enhance performance while collaborating effectively with the team made a significant impact.",
-    avatar: Avatar1,
-  },
-  {
     name: "Sophie Martin",
-    position: "CTO @ SophiaTech Solutions",
+    position: "Lead developper @ Orange",
     text: "Bilal is a talented developer who greatly improved our product's technical infrastructure. His work on refactoring our codebase helped us reduce technical debt and improve maintainability.",
     avatar: Avatar2,
   },
   {
-    name: "David Lefèvre",
-    position: "Project Manager @ EURECOM",
-    text: "Bilal played a key role in developing our internal tools. His backend expertise and attention to detail ensured that our services ran smoothly and efficiently. He was a pleasure to work with.",
-    avatar: Avatar3,
+    name: "Paul-Jean Poirson",
+    position: "CTO @ Luxeol",
+    text: "Bilal's expertise in front-end development was critical in optimizing our web applications. His ability to enhance performance while collaborating effectively with the team made a significant impact.",
+    avatar: Avatar1,
   },
   {
-    name: "Marie Laurent",
+    name: "Étienne Gauttier",
     position: "Lead UX Designer @ Orange",
-    text: "Bilal’s collaborative spirit and frontend development skills significantly enhanced the user experience on our platform. He always delivered clean and efficient code, making our designs come to life.",
+    text: "Bilal’s collaborative spirit and full stack development skills significantly enhanced the user experience on our platform. He always delivered clean and efficient code, making our designs come to life.",
     avatar: Avatar4,
   },
   {
-    name: "Luc Moreau",
-    position: "Lead Developer @ SophiaTech Solutions",
+    name: "Raphaël Bellon",
+    position: "Lead Developer @ Luxeol",
     text: "Working with Bilal was seamless. His expertise in integrating APIs and improving our web app’s responsiveness was essential to the success of our projects.",
     avatar: Avatar5,
-  },
+  }
 ];
 
 

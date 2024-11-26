@@ -1,6 +1,5 @@
 import { create } from 'zustand'
 
-
 const store = {
   language: "fr",
   setTranslation: (set: any) => (language: string) => set({ language }),

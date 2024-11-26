@@ -15,85 +15,11 @@ import {
   GithubIcon,
 } from "@/assets";
 
-export const portfolioProjects = [
-  {
-    company: "Maxing Us",
-    year: "2024",
-    title: "AI-Powered Personal Improvement App - Coming soon",
-    results: [
-      { title: "Enhanced personalization with tailored improvement courses" },
-      { title: "Boosted engagement by team challenges and competition" },
-      { title: "Developed with Expo and React Native" },
-    ],
-    link: "https://www.maxingus.com/",
-    image: Showcase3,
-  },
-  {
-    company: "Luxeol",
-    year: "2022 - 2024",
-    title: "Front-end Developper",
-    results: [
-      { title: "Built responsive web applications using React, and Redux, improving client retention rates" },
-      { title: "Integrated third-party APIs and services to extend product functionalities" },
-      { title: "Refactored legacy codebases, reducing technical debt and improving maintainability" },
-    ],
-    link: "https://luxeol.com/",
-    image: Showcase2,
-  },
-  {
-    company: "Orange",
-    year: "2020 - 2022",
-    title: "Full-stack Developer",
-    results: [
-      { title: "Improved application performance, reducing server response time by 35%" },
-      { title: "Collaborated with cross-functional teams for seamless feature integration" },
-      { title: "Enhanced user experience through close collaboration with UX/UI teams" },
-    ],
-    link: "https://boutique.orange.fr/internet/offres-fibre",
-    image: Showcase1,
-  },
-];
 
-export const tapeWords = [
-  "Performant",
-  "Accessible",
-  "Secure",
-  "Interactive",
-  "Scalable",
-  "User Friendly",
-  "Responsive",
-  "Maintainable",
-  "Search Optimized",
-  "usable",
-  "Reliable",
-];
 
-export const testimonials = [
-  {
-    name: "Sophie Martin",
-    position: "Lead developper @ Orange",
-    text: "Bilal is a talented developer who greatly improved our product's technical infrastructure. His work on refactoring our codebase helped us reduce technical debt and improve maintainability.",
-    avatar: Avatar2,
-  },
-  {
-    name: "Paul-Jean Poirson",
-    position: "CTO @ Luxeol",
-    text: "Bilal's expertise in front-end development was critical in optimizing our web applications. His ability to enhance performance while collaborating effectively with the team made a significant impact.",
-    avatar: Avatar1,
-  },
-  {
-    name: "Étienne Gauttier",
-    position: "Lead UX Designer @ Orange",
-    text: "Bilal’s collaborative spirit and full stack development skills significantly enhanced the user experience on our platform. He always delivered clean and efficient code, making our designs come to life.",
-    avatar: Avatar4,
-  },
-  {
-    name: "Raphaël Bellon",
-    position: "Lead Developer @ Luxeol",
-    text: "Working with Bilal was seamless. His expertise in integrating APIs and improving our web app’s responsiveness was essential to the success of our projects.",
-    avatar: Avatar5,
-  }
-];
+
+
+
 
 
 export const toolBoxItems = [
@@ -105,12 +31,3 @@ export const toolBoxItems = [
   { title: "Github", iconType: GithubIcon },
 ];
 
-export const hobbies = [
-  { title: "Painting", emoji: "🎨", left: "5%", top: "5%" },
-  { title: "Photography", emoji: "📷", left: "50%", top: "5%" },
-  { title: "Hiking", emoji: "🥾", left: "35%", top: "40%" },
-  { title: "Gaming", emoji: "🎮", left: "10%", top: "35%" },
-  { title: "Music", emoji: "🎵", left: "70%", top: "45%" },
-  { title: "Fitness", emoji: "🏋️‍♀️", left: "5%", top: "65%" },
-  { title: "Reading", emoji: "📚", left: "45%", top: "70%" },
-];

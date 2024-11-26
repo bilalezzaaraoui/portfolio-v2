@@ -3,17 +3,22 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { twMerge } from "tailwind-merge";
+import { useBoundStore } from "@/store/store";
 
-const navItems = [
-  { href: "#", title: "Home" },
-  { href: "#projects", title: "Projects" },
-  { href: "#about", title: "About" },
-  { href: "#contact", title: "Contact" },
-];
+
+
 
 export const Header = () => {
   const pathname = usePathname();
   const [activeLink, setActiveLink] = useState<string>("#");
+  const language = useBoundStore((state) => state.language);
+
+  const navItems = [
+    { href: "#", title: language === "en" ? "Home" : "Accueil" },
+    { href: "#projects", title: language === "en" ? "Projects" : "Projets" },
+    { href: "#about", title: language === "en" ? "About" : "À propos" },
+    { href: "#contact", title: language === "en" ? "Contact" : "Contact" },
+  ];
 
   useEffect(() => {
     setActiveLink(pathname === "/" ? "#" : pathname);

@@ -1,7 +1,26 @@
+"use client";
+
 import { StarIcon } from "@/assets";
-import { tapeWords } from "@/data/data";
+import { useBoundStore } from "@/store/store";
 
 export const Tape = () => {
+  const language = useBoundStore((state) => state.language);
+
+  const tapeWords = [
+    language === "en" ? "Performant" : "Performant",
+    language === "en" ? "Accessible" : "Accessible",
+    language === "en" ? "Secure" : "Sécurisé",
+    language === "en" ? "Interactive" : "Interactif",
+    language === "en" ? "Scalable" : "Scalable",
+    language === "en" ? "User Friendly" : "Convivial",
+    language === "en" ? "Responsive" : "Responsive",
+    language === "en" ? "Maintainable" : "Maintenable",
+    language === "en" ? "Search Optimized" : "Optimisé pour la recherche",
+    language === "en" ? "Usable" : "Utilisable",
+    language === "en" ? "Reliable" : "Fiable",
+];
+
+
   return (
     <section className="py-16 lg:py-24 overflow-x-clip">
       <div className="bg-gradient-to-r from-emerald-300 to-sky-400 -rotate-3 -mx-1">

@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Button from "@/components/Button";
 import HeroOrbit from "@/components/HeroOrbit";
@@ -9,8 +10,11 @@ import {
   StarIcon,
   SprakleIcon,
 } from "@/assets";
+import { useBoundStore } from "@/store/store";
 
 export const Hero = () => {
+  const language = useBoundStore((state) => state.language);
+
   return (
     <section className="relative py-32 md:py-48 lg:py-60 z-0 overflow-x-clip">
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
@@ -117,31 +121,31 @@ export const Hero = () => {
               <div className="absolute inset-0 bg-green-500 rounded-full animate-ping-long"></div>
             </div>
             <span className="text-sm font-medium">
-              Available for new projects
+              {language === "en" ? "Available for new projects" : "Disponible pour de nouveaux projets"}
             </span>
           </div>
         </div>
         <div className="max-w-lg mx-auto">
           <h1 className="text-3xl md:text-5xl font-serif text-center tracking-wide mt-8">
-            Building Exceptional User Experiences
+            {language === "en" ? "Building Exceptional User Experiences" : "Propulsons votre projet ensemble"}
           </h1>
           <p className="md:text-lg text-center text-white/60 mt-4">
-            {`My name is Bilal Ezzaaraoui and i'm a full stack developper, specialized in transforming designs into functional,
+            {language === "en" ? `My name is Bilal Ezzaaraoui and i'm a full stack developper, specialized in transforming designs into functional,
             high-performing performing web applications. Let's discuss your
-            next project.`}
+            next project.` : "Je m'appelle Bilal Ezzaaraoui et je suis un développeur full stack JS, spécialisé dans la transformation de designs en applications web et mobile fonctionnelles et performantes. Parlons de votre prochain projet."}
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-8">
           <a href="#projects">
             <Button variant="primary">
-              <span className="font-semibold">Explore My Work</span>
+              <span className="font-semibold">{language === "en" ? "Explore My Work" : "Mes réalisations"}</span>
               <ArrowDownIcon className="size-4" />
             </Button>
           </a>
-          <a href="/Resume%20Bilal%20EZZAARAOUI.pdf" download="Resume Bilal EZZAARAOUI.pdf">
+          <a href={language === "en" ? "/Resume%20Bilal%20EZZAARAOUI.pdf" : "cv-fr.pdf"} download={language === "en" ? "Resume Bilal EZZAARAOUI.pdf" : "CV Bilal EZZAARAOUI.pdf"}>
             <Button variant="secondary">
               <span>👋</span>
-              <span className="font-semibold">Download Resume</span>
+              <span className="font-semibold">{language === "en" ? "Download Resume" : "Télécharger mon CV"}</span>
             </Button>
           </a>
         </div>

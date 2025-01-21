@@ -20,16 +20,16 @@ export const CallToAction = () => {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
             <div>
               <h2 className="font-serif text-2xl md:text-3xl">
-               {language === "en" ? "Let's create something amazing together" : "Envie que j'intégre votre équipe?"}
+               {language === "en" ? "Do you want me to join your team?" : "Envie que j'intégre votre équipe?"}
               </h2>
               <p className="text-sm md:text-base mt-2">
-                {language === "en" ? "Ready to bring your next project to life? Let&apos;s connect and discuss now I can help you achieve your goals." : "Si vous avez besoin d'un développeur full stack discipliné, curieux avec un réel esprit d'équipe, n'hésitez pas à me contacter."}
+                {language === "en" ? "If you need a disciplined, curious full stack developer with a true team spirit, do not hesitate to contact me." : "Si vous avez besoin d'un développeur full stack discipliné, curieux avec un réel esprit d'équipe, n'hésitez pas à me contacter."}
               </p>
             </div>
             <div>
               <a href="tel:+66985683858">
                 <Button className="text-white bg-gray-900 gap-2 w-max border border-gray-900">
-                  <span className="font-semibold">{language === "en" ? "Contect Me" : 
+                  <span className="font-semibold">{language === "en" ? "Contect Me Now" : 
                     "On en discute?"}</span>
                   <ArrowUpRightIcon className="size-4" />
                 </Button>

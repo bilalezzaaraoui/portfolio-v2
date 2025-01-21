@@ -13,6 +13,20 @@ import {
   ReactIcon,
   ChromeIcon,
   GithubIcon,
+  ApiIcon,
+  AwsIcon,
+  CypressIcon,
+  DockerIcon,
+  ExpressIcon,
+  FlutterIcon,
+  JestIcon,
+  MongoDBIcon,
+  NextJsIcon,
+  NodeJsIcon,
+  PostgreSQLIcon,
+  TailwindIcon,
+  SassIcon,
+TypescriptIcon
 } from "@/assets";
 
 
@@ -22,12 +36,45 @@ import {
 
 
 
-export const toolBoxItems = [
-  { title: "Javascript", iconType: JavascriptIcon },
-  { title: "HTML5", iconType: HtmlIcon },
-  { title: "CSS3", iconType: CssIcon },
-  { title: "React", iconType: ReactIcon },
-  { title: "Chrome", iconType: ChromeIcon },
-  { title: "Github", iconType: GithubIcon },
+export const toolBoxItemsFront = [
+  { title: "JavaScript", iconType: JavascriptIcon },
+  { title: "TypeScript", iconType: TypescriptIcon },
+  { title: "React Js", iconType: ReactIcon },
+  { title: "Next Js", iconType: NextJsIcon },
+  { title: "React Native", iconType: ReactIcon },
+  { title: "Flutter", iconType: FlutterIcon },
+  { title: "Sass", iconType: SassIcon },
+  { title: "Tailwind", iconType: TailwindIcon },
 ];
 
+export const toolBoxItemsBack = [
+  { title: "Node Js", iconType: NodeJsIcon },
+  { title: "Express Js", iconType: ExpressIcon },
+  { title: "Api Rest", iconType: ApiIcon },
+  { title: "PostgreSQL", iconType: PostgreSQLIcon },
+  { title: "MongoDB", iconType: MongoDBIcon },
+];
+
+export const toolBoxItemsDevOps = [
+  { title: "Jest", iconType: JestIcon },
+  { title: "Cypress", iconType: CypressIcon },
+  { title: "Docker", iconType: DockerIcon },
+  { title: "Github", iconType: GithubIcon },
+  { title: "Aws", iconType: AwsIcon },
+];
+
+export const toolBoxItemsSoftSkillsFr = [
+  { title: "Résolution de problèmes"},
+  { title: "Communication"},
+  { title: "Adaptabilité" },
+  { title: "Gestion du temps" },
+  { title: "Travail d'équipe"},
+];
+
+export const toolBoxItemsSoftSkillsEn = [
+  { title: "Problem-Solving"},
+  { title: "Communication"},
+  { title: "Adaptability" },
+  { title: "Time Management" },
+  { title: "Teamwork"},
+];

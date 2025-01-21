@@ -121,18 +121,24 @@ export const Hero = () => {
               <div className="absolute inset-0 bg-green-500 rounded-full animate-ping-long"></div>
             </div>
             <span className="text-sm font-medium">
-              {language === "en" ? "Available for new projects" : "Disponible pour de nouveaux projets"}
+              {language === "en" ? "Seeking employment" : "À la recherche d'un emploi"}
             </span>
           </div>
         </div>
-        <div className="max-w-lg mx-auto">
-          <h1 className="text-3xl md:text-5xl font-serif text-center tracking-wide mt-8">
-            {language === "en" ? "Building Exceptional User Experiences" : "Propulsons votre projet ensemble"}
-          </h1>
+        <div className="max-w-xl mx-auto">
+        <h1 className="text-3xl md:text-5xl font-serif text-center mt-8">
+          <span>Bilal EZZAARAOUI,</span><br />
+          <span>{language === "en" ? "Full Stack Developer" : "Développeur Full-Stack"}</span>
+        </h1>
+
           <p className="md:text-lg text-center text-white/60 mt-4">
-            {language === "en" ? `My name is Bilal Ezzaaraoui and i'm a full stack developper, specialized in transforming designs into functional,
-            high-performing performing web applications. Let's discuss your
-            next project.` : "Je m'appelle Bilal Ezzaaraoui et je suis un développeur full stack JS, spécialisé dans la transformation de designs en applications web et mobile fonctionnelles et performantes. Parlons de votre prochain projet."}
+            {language === "en" ? `Passionate about coding and creating high-performance, aesthetically pleasing web and mobile applications.` : "Passionné par le code et la création d'applications web et mobile performantes et esthétiques."}
+          </p>
+          <p className="md:text-lg text-center text-white/60 mt-4">
+            {language === "en" ? `Expert in React, React Native, Node.js, and the latest web technologies, I turn ideas into digital realities.` : "Expert en React, React Native, Node.js et les dernières techs web, je transforme les idées en réalités numériques."}
+          </p>
+          <p className="md:text-lg text-center text-white/60 mt-4">
+            {language === "en" ? `Ready to innovate together?` : "Prêt à innover ensemble ?"}
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-8">

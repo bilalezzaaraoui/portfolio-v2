@@ -21,7 +21,7 @@ export const SectionHeader: FC<SectionHeaderProps> = ({
       <h2 className="font-serif text-3xl md:text-5xl text-center mt-6">
         {title}
       </h2>
-      <p className="md:text-lg lg:text-xl text-center text-white/60 mt-4 max-w-md mx-auto">
+      <p className="md:text-lg lg:text-xl text-center text-white/60 mt-4 max-w-xl mx-auto">
         {description}
       </p>
     </>

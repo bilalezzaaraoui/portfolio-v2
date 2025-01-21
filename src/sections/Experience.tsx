@@ -7,7 +7,7 @@ import { Fragment } from "react";
 import { Avatar1, Avatar2, Avatar4, Avatar5 } from "@/assets";
 import { useBoundStore } from "@/store/store";
 
-export const Testimonials = () => {
+export const Experience = () => {
   const language = useBoundStore((state) => state.language);
 
   const testimonials = [
@@ -21,7 +21,7 @@ export const Testimonials = () => {
       name: "Paul-Jean Poirson",
       position: "CTO @ Luxeol",
       text: language === "en" ? "Bilal's expertise in front-end development was critical in optimizing our web applications. His ability to enhance performance while collaborating effectively with the team made a significant impact." : "L'expertise de Bilal en développement front-end a été cruciale pour optimiser nos applications web. Sa capacité à améliorer les performances tout en collaborant efficacement avec l'équipe a eu un impact significatif.",
-      avatar: Avatar1,
+      avatar: Avatar5,
     },
     // {
     //   name: "Étienne Gauttier",
@@ -33,7 +33,7 @@ export const Testimonials = () => {
       name: "Raphaël Bellon",
       position: language === "en" ? "Lead Developer @ Luxeol" : "Lead Developpeur @ Luxeol" ,
       text: language === "en" ? "Working with Bilal was seamless. His expertise in integrating APIs and improving our web app’s responsiveness was essential to the success of our projects." : "Travailler avec Bilal était sans accroc. Son expertise dans l'intégration d'API et l'amélioration de la réactivité de notre application web était essentielle à la réussite de nos projets.",
-      avatar: Avatar5,
+      avatar: Avatar1,
     }
   ];
 
@@ -41,10 +41,9 @@ export const Testimonials = () => {
     <section className="py-16 lg:py-24">
       <div className="container">
         <SectionHeader
-          eyebrow="Happy Clients"
-          title="What Clients Say about Me"
-          description="Don't just take my word for it. See what my clients have to say
-        about my work."
+          eyebrow={language === "en" ? "My Experience" : "Mon expérience"}
+          title={language === "en" ? "I’ve had the chance to work with talented teams on a variety of projects" : "J'ai eu la chance de travailler avec des équipes talentueuses sur des projets variés"}
+          description={language === "en" ? "Discover my journey up to our meeting" : "Décourez mon parcours jusqu'à notre rencontre"}
         />
         <div className="mt-12 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] py-4 -my-4">
           <div className="flex flex-none gap-8 pr-8 animate-move-left [animation-duration:90s] hover:[animation-play-state:paused]">

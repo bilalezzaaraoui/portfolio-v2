@@ -5,16 +5,18 @@ import { Header } from "@/sections/Header";
 import { Hero } from "@/sections/Hero";
 import { Projects } from "@/sections/Projects";
 import { Tape } from "@/sections/Tape";
-import { Testimonials } from "@/sections/Testimonials";
+import { Experience } from "@/sections/Experience";
+import { Stack } from "@/sections/Stack";
 
 export default function Home() {
   return (
     <main>
       <Header />
       <Hero />
+      <Stack />
       <Projects />
       <Tape />
-      <Testimonials />
+      <Experience />
       <About />
       <CallToAction />
       <Footer />

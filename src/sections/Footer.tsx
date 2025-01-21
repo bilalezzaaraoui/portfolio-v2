@@ -11,13 +11,8 @@ const navItems = [
 
 
 export const Footer = () => {
-  const setTranslation = useBoundStore((state) => state.setTranslation);
   const language = useBoundStore((state) => state.language);
 
-  const setTranslationCallback = () => {
-    setTranslation(language === "fr" ? "en" : "fr");
-    window.scrollTo(0, 0);
-  };
 
   return (
     <footer className="relative overflow-x-clip">
@@ -26,14 +21,6 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-row md:justify-between items-center gap-8 border-t border-white/15 py-6 text-sm">
           <p className="text-white/40">{language === "en" ? "2024. All rights reserved." :  "2024. Tous droits réservés."}</p>
           <nav className="flex flex-col md:flex-row items-center gap-8">
-            <button
-                onClick={setTranslationCallback}
-                className="inline-flex items-center gap-1.5 group relative cursor-pointer"
-              >
-                <span className="font-semibold">{language === "en" ? "fr".toUpperCase() : "en".toUpperCase()}</span>
-                <ArrowUpRightIcon className="size-4" />
-                <span className="absolute -bottom-1 left-0 w-full h-[1px] bg-transparent group-hover:bg-white transition-all duration-300"></span>
-            </button>
             {navItems.map((item, index) => (
               <Link
                 href={item.href}

@@ -6,7 +6,8 @@ import { Card } from "@/components/Card";
 import { CardHeader } from "@/components/CardHeader";
 import { SectionHeader } from "@/components/SectionHeader";
 import { ToolboxItems } from "@/components/ToolboxItems";
-import { toolBoxItems } from "@/data/data";
+import { toolBoxItemsSoftSkillsFr } from "@/data/data";
+import { toolBoxItemsSoftSkillsEn } from "@/data/data";
 import { BookCoverImage, MapImageTh, MapImageFr, EmojiSmileImage } from "@/assets";
 import { useRef } from "react";
 import { useBoundStore } from "@/store/store";
@@ -17,14 +18,14 @@ export const About = () => {
 
 
   const hobbies = [
-    { title: language === "en" ? "Painting" : "Peinture", emoji: "🎨", left: "5%", top: "5%" },
-    { title: language === "en" ? "Photography" : "Photographie", emoji: "📷", left: "50%", top: "5%" },
-    { title: language === "en" ? "Hiking" : "Randonnée", emoji: "🥾", left: "35%", top: "40%" },
-    { title: language === "en" ? "Gaming" : "Jeux vidéo", emoji: "🎮", left: "10%", top: "35%" },
-    { title: language === "en" ? "Music" : "Musique", emoji: "🎵", left: "70%", top: "45%" },
-    { title: language === "en" ? "Fitness" : "Fitness", emoji: "🏋️‍♀️", left: "5%", top: "65%" },
-    { title: language === "en" ? "Reading" : "Lecture", emoji: "📚", left: "45%", top: "70%" },
-];
+    { title: language === "en" ? "Coding projects" : "Coder des projets", emoji: "💻", left: "5%", top: "5%" },
+    { title: language === "en" ? "Creating content" : "Créer du contenu", emoji: "📸", left: "50%", top: "5%" },
+    { title: language === "en" ? "Traveling" : "Voyager", emoji: "✈️", left: "35%", top: "40%" },
+    { title: language === "en" ? "Playing games" : "Jouer", emoji: "🎮", left: "10%", top: "35%" },
+    { title: language === "en" ? "Music" : "La musique", emoji: "🎧", left: "70%", top: "45%" },
+    { title: language === "en" ? "Training 3x/week" : "M'entrainer 3x/semaine", emoji: "🏋️", left: "5%", top: "65%" },
+    { title: language === "en" ? "Reading books" : "Lire des livres", emoji: "📖", left: "45%", top: "70%" },
+  ];
 
 
 
@@ -40,8 +41,8 @@ export const About = () => {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
             <Card className="h-[320px] md:col-span-2 lg:col-span-1">
               <CardHeader
-                title={language === "en" ? "My Reads" : "Mes lectures"}
-                description={language === "en" ? "Explore the books shaping my perspectives." : "Découvrez les livres qui façonnent mes perspectives."}
+                title={language === "en" ? "My Reads" : "Mon livre du moment"}
+                description={language === "en" ? "Explore the books shaping my perspectives." : "Découvrez le livre que mon cervaux est entrain de download ;)"}
               />
               <div className="w-40 mt-2 md:mt-0 mx-auto">
                 <Image
@@ -53,15 +54,15 @@ export const About = () => {
             </Card>
             <Card className="h-[320px] md:col-span-3 lg:col-span-2">
               <CardHeader
-                title={language === "en" ? "My Toolbox" : "Ma boîte à outils"}
-                description={language === "en" ? "Explore the technologies and tools I use to craft expectional digital experiences." : "Découvrez les technologies et les outils que j'utilise"}
+                title={language === "en" ? "My Toolbox" : "Mes soft skills"}
+                description={language === "en" ? "Explore the technologies and tools I use to craft expectional digital experiences." : "Ce sont les compétences que j'ai acquises au fil des années."}
               />
               <ToolboxItems
-                items={toolBoxItems}
+                items={language === "en" ? toolBoxItemsSoftSkillsEn : toolBoxItemsSoftSkillsFr}
                 itemsWrapperClassName="animate-move-left [animation-duration:30s]"
               />
               <ToolboxItems
-                items={toolBoxItems}
+                items={language === "en" ? toolBoxItemsSoftSkillsEn : toolBoxItemsSoftSkillsFr}
                 className="mt-6"
                 itemsWrapperClassName="-translate-x-1/2 animate-move-right [animation-duration:30s]"
               />
@@ -72,7 +73,7 @@ export const About = () => {
             <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
               <CardHeader
                 title={language === "en" ? "Beyond the Code" : "Au-delà du code"}
-                description={language === "en" ? "Explore my interests and hobbies beyond the digital realm." : "Explorez mes intérêts et mes hobbies au-delà du numérique."}
+                description={language === "en" ? "Explore my interests and hobbies beyond the digital realm." : "Les hobbies et activités que j'aime pratiqué seul ou en groupes."}
                 className="px-6 py-6"
               />
               <div ref={constraintRef} className="relative flex-1">

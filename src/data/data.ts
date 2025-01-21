@@ -64,17 +64,17 @@ export const toolBoxItemsDevOps = [
 ];
 
 export const toolBoxItemsSoftSkillsFr = [
-  { title: "Résolution de problèmes"},
-  { title: "Communication"},
-  { title: "Adaptabilité" },
-  { title: "Gestion du temps" },
-  { title: "Travail d'équipe"},
+  { title: "Résolution de problèmes", iconType: undefined},
+  { title: "Communication", iconType: undefined},
+  { title: "Adaptabilité", iconType: undefined },
+  { title: "Gestion du temps", iconType: undefined },
+  { title: "Travail d'équipe", iconType: undefined},
 ];
 
 export const toolBoxItemsSoftSkillsEn = [
-  { title: "Problem-Solving"},
-  { title: "Communication"},
-  { title: "Adaptability" },
-  { title: "Time Management" },
-  { title: "Teamwork"},
+  { title: "Problem-Solving", iconType: undefined},
+  { title: "Communication", iconType: undefined},
+  { title: "Adaptability", iconType: undefined },
+  { title: "Time Management", iconType: undefined },
+  { title: "Teamwork", iconType: undefined},
 ];

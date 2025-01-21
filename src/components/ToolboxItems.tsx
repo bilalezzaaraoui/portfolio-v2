@@ -4,7 +4,7 @@ import { twMerge } from "tailwind-merge";
 
 interface ToolBoxItemProps {
   title: string;
-  iconType: React.ElementType;
+  iconType: any;
 }
 
 interface ToolboxItemsProps {

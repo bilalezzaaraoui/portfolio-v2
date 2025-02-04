@@ -26,25 +26,19 @@ import {
   PostgreSQLIcon,
   TailwindIcon,
   SassIcon,
-TypescriptIcon,
-ExpoIcon
+  TypescriptIcon,
+  ExpoIcon, 
+  ReduxIcon
 } from "@/assets";
-
-
-
-
-
-
 
 
 export const toolBoxItemsFront = [
   { title: "JavaScript", iconType: JavascriptIcon },
   { title: "TypeScript", iconType: TypescriptIcon },
   { title: "React Js", iconType: ReactIcon },
-  { title: "Next Js", iconType: NextJsIcon },
   { title: "React Native", iconType: ReactIcon },
   { title: "Expo", iconType: ExpoIcon },
-  { title: "Flutter", iconType: FlutterIcon },
+  { title: "Redux", iconType: ReduxIcon },
   { title: "Sass", iconType: SassIcon },
   { title: "Tailwind", iconType: TailwindIcon },
 ];

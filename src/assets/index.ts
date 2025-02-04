@@ -37,3 +37,4 @@ export { default as PostgreSQLIcon } from "@/assets/icons/postgresql-svgrepo-com
 export { default as TailwindIcon } from "@/assets/icons/tailwind-svgrepo-com.svg";
 export { default as SassIcon } from "@/assets/icons/sass-svgrepo-com.svg";
 export { default as TypescriptIcon } from "@/assets/icons/typescript-svgrepo-com.svg";
+export { default as ExpoIcon } from "@/assets/icons/expo-svgrepo-com.svg";

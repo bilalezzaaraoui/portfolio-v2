@@ -26,7 +26,8 @@ import {
   PostgreSQLIcon,
   TailwindIcon,
   SassIcon,
-TypescriptIcon
+TypescriptIcon,
+ExpoIcon
 } from "@/assets";
 
 
@@ -42,6 +43,7 @@ export const toolBoxItemsFront = [
   { title: "React Js", iconType: ReactIcon },
   { title: "Next Js", iconType: NextJsIcon },
   { title: "React Native", iconType: ReactIcon },
+  { title: "Expo", iconType: ExpoIcon },
   { title: "Flutter", iconType: FlutterIcon },
   { title: "Sass", iconType: SassIcon },
   { title: "Tailwind", iconType: TailwindIcon },

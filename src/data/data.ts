@@ -28,35 +28,48 @@ import {
   SassIcon,
   TypescriptIcon,
   ExpoIcon, 
-  ReduxIcon
+  ReduxIcon,
+  ReactQuery,
+  ExpoEasIcon,
+  ZustandIcon,
+  ReanimatedIcon,
+  FirebaseIcon,
+  SupabaseIcon
 } from "@/assets";
 
 
 export const toolBoxItemsFront = [
-  { title: "JavaScript", iconType: JavascriptIcon },
   { title: "TypeScript", iconType: TypescriptIcon },
   { title: "React Js", iconType: ReactIcon },
+  { title: "Redux", iconType: ReduxIcon },
+  { title: "React Query", iconType: ReactQuery },
+  { title: "Tailwind", iconType: TailwindIcon },
+  { title: "Jest", iconType: JestIcon },
+  { title: "Cypress", iconType: CypressIcon },
+  { title: "GitHub Actions", iconType: GithubIcon },
+];
+
+export const toolBoxItemsMobile = [
+  { title: "TypeScript", iconType: TypescriptIcon },
   { title: "React Native", iconType: ReactIcon },
   { title: "Expo", iconType: ExpoIcon },
-  { title: "Redux", iconType: ReduxIcon },
-  { title: "Sass", iconType: SassIcon },
+  { title: "Expo EAS", iconType: ExpoEasIcon },
   { title: "Tailwind", iconType: TailwindIcon },
+  { title: "Zustand", iconType: ZustandIcon },
+  { title: "React Query", iconType: ReactQuery },
+  { title: "Reanimated", iconType: ReanimatedIcon },
+  { title: "Jest", iconType: JestIcon },
+  { title: "React native testing", iconType: JestIcon },
+  { title: "GitHub Actions", iconType: GithubIcon },
 ];
 
 export const toolBoxItemsBack = [
-  { title: "Node Js", iconType: NodeJsIcon },
-  { title: "Express Js", iconType: ExpressIcon },
-  { title: "Api Rest", iconType: ApiIcon },
-  { title: "PostgreSQL", iconType: PostgreSQLIcon },
-  { title: "MongoDB", iconType: MongoDBIcon },
-];
-
-export const toolBoxItemsDevOps = [
-  { title: "Jest", iconType: JestIcon },
-  { title: "Cypress", iconType: CypressIcon },
-  { title: "Docker", iconType: DockerIcon },
-  { title: "Github", iconType: GithubIcon },
-  { title: "Aws", iconType: AwsIcon },
+  { title: "Supabase", iconType: SupabaseIcon },
+  { title: "Firebase", iconType: FirebaseIcon },
+  { title: "Supabase", iconType: SupabaseIcon },
+  { title: "Firebase", iconType: FirebaseIcon },
+  { title: "Supabase", iconType: SupabaseIcon },
+  { title: "Firebase", iconType: FirebaseIcon },
 ];
 
 export const toolBoxItemsSoftSkillsFr = [

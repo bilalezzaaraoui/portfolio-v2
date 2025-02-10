@@ -9,6 +9,7 @@ import {
   GrainImage,
   StarIcon,
   SprakleIcon,
+  GithubTwo
 } from "@/assets";
 import { useBoundStore } from "@/store/store";
 
@@ -36,7 +37,7 @@ export const Hero = () => {
           shouldSpin
           spinDuration={3}
         >
-          <SprakleIcon className="size-8 text-emerald-300/20" />
+          <SprakleIcon className="size-8 text-cyan-300/20" />
         </HeroOrbit>
         <HeroOrbit
           size={440}
@@ -46,10 +47,10 @@ export const Hero = () => {
           shouldSpin
           spinDuration={3}
         >
-          <SprakleIcon className="size-5 text-emerald-300/20" />
+          <SprakleIcon className="size-5 text-cyan-300/20" />
         </HeroOrbit>
         <HeroOrbit size={520} rotation={-41} shouldOrbit orbitDuration={34}>
-          <div className="size-2 text-emerald-300/20 rounded-full" />
+          <div className="size-2 text-cyan-300/20 rounded-full" />
         </HeroOrbit>
         <HeroOrbit
           size={530}
@@ -59,7 +60,7 @@ export const Hero = () => {
           shouldSpin
           spinDuration={3}
         >
-          <SprakleIcon className="size-10 text-emerald-300/20" />
+          <SprakleIcon className="size-10 text-cyan-300/20" />
         </HeroOrbit>
         <HeroOrbit
           size={550}
@@ -69,7 +70,7 @@ export const Hero = () => {
           shouldSpin
           spinDuration={6}
         >
-          <StarIcon className="size-12 text-emerald-300" />
+          <StarIcon className="size-12 text-cyan-300" />
         </HeroOrbit>
         <HeroOrbit
           size={590}
@@ -79,10 +80,10 @@ export const Hero = () => {
           shouldSpin
           spinDuration={6}
         >
-          <StarIcon className="size-8 text-emerald-300" />
+          <StarIcon className="size-8 text-cyan-300" />
         </HeroOrbit>
         <HeroOrbit size={650} rotation={-5} shouldOrbit orbitDuration={42}>
-          <div className="size-2 text-emerald-300/20 rounded-full" />
+          <div className="size-2 text-cyan-300/20 rounded-full" />
         </HeroOrbit>
         <HeroOrbit
           size={710}
@@ -92,10 +93,10 @@ export const Hero = () => {
           shouldSpin
           spinDuration={3}
         >
-          <SprakleIcon className="size-14 text-emerald-300/20" />
+          <SprakleIcon className="size-14 text-cyan-300/20" />
         </HeroOrbit>
         <HeroOrbit size={720} rotation={85} shouldOrbit orbitDuration={46}>
-          <div className="size-3 text-emerald-300/20 rounded-full" />
+          <div className="size-3 text-cyan-300/20 rounded-full" />
         </HeroOrbit>
         <HeroOrbit
           size={800}
@@ -105,7 +106,7 @@ export const Hero = () => {
           shouldSpin
           spinDuration={6}
         >
-          <StarIcon className="size-28 text-emerald-300" />
+          <StarIcon className="size-28 text-cyan-300" />
         </HeroOrbit>
       </div>
 
@@ -114,7 +115,7 @@ export const Hero = () => {
           <Image
             src={EmojiComputerImage}
             alt="Emoji Computer"
-            className="size-[100px]"
+            className="size-[150px] rounded-full mb-[-2rem] border-4 border-white"
           />
           <div className="inline-flex items-center gap-4 px-4 py-1.5 bg-gray-950 border border-gray-800 rounded-lg">
             <div className="bg-green-500 size-2.5 rounded-full relative">
@@ -128,27 +129,27 @@ export const Hero = () => {
         <div className="max-w-xl mx-auto">
         <h1 className="text-3xl md:text-5xl font-serif text-center mt-8">
           <span>Bilal EZZAARAOUI,</span><br />
-          <span>{language === "en" ? "Full Stack Developer" : "Développeur Full-Stack"}</span>
+          <span>{language === "en" ? "React.js & React Native Developer" : "Développeur React.js & React Native"}</span>
         </h1>
 
           <p className="md:text-lg text-center text-white/60 mt-4">
-            {language === "en" ? `Passionate about coding and creating high-performance, aesthetically pleasing web and mobile applications.` : "Passionné par le code et la création d'applications web et mobile performantes et esthétiques."}
+            {language === "en" ? `Passionate about code and the creation of high-performance and aesthetically pleasing web and mobile applications.` : "Passionné par le code et la création d'applications web et mobile performantes et esthétiques."}
           </p>
           <p className="md:text-lg text-center text-white/60 mt-4">
-            {language === "en" ? `Expert in React, React Native, Node.js, and the latest web technologies, I turn ideas into digital realities.` : "Expert en React, React Native, Node.js et les dernières techs web, je transforme les idées en réalités numériques."}
+            {language === "en" ? `Experienced in React, React Native, and Expo, I transform challenges into applications that meet a need.` : "Expérimenté en React, React Native et Expo, je transforme les problématiques en application répondant à un besoin."}
           </p>
           <p className="md:text-lg text-center text-white/60 mt-4">
-            {language === "en" ? `Ready to innovate together?` : "Prêt à innover ensemble ?"}
+            {language === "en" ? `Ready to work together?` : "Prêt à travailler ensemble ?"}
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-8">
-          <a href="#projects">
+          <a href="https://github.com/bilalezzaaraoui" target="_blank">
             <Button variant="primary">
-              <span className="font-semibold">{language === "en" ? "Explore My Work" : "Mes réalisations"}</span>
-              <ArrowDownIcon className="size-4" />
+              <span className="font-semibold">{language === "en" ? "My Github Profile" : "Mon profil Github"}</span>
+              <GithubTwo className="size-4" />
             </Button>
           </a>
-          <a href={language === "en" ? "/Resume%20Bilal%20EZZAARAOUI.pdf" : "cv-fr.pdf"} download={language === "en" ? "Resume Bilal EZZAARAOUI.pdf" : "CV Bilal EZZAARAOUI.pdf"}>
+          <a href={language === "en" ? "/Resume%20Bilal%20EZZAARAOUI.pdf" : "cv-fr.pdf"} download={language === "en" ? "Resume Bilal EZZAARAOUI.pdf" : "CV Bilal EZZAARAOUI"}>
             <Button variant="secondary">
               <span>👋</span>
               <span className="font-semibold">{language === "en" ? "Download Resume" : "Télécharger mon CV"}</span>

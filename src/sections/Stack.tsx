@@ -7,8 +7,8 @@ import { CardHeaderStack } from "@/components/CardHeaderStack";
 import { SectionHeader } from "@/components/SectionHeader";
 import { ToolboxItemsStack } from "@/components/ToolboxItemsStack";
 import { toolBoxItemsFront } from "@/data/data";
+import { toolBoxItemsMobile } from "@/data/data";
 import { toolBoxItemsBack } from "@/data/data";
-import { toolBoxItemsDevOps } from "@/data/data";
 import { BookCoverImage, MapImageTh, MapImageFr, EmojiSmileImage } from "@/assets";
 import { useRef } from "react";
 import { useBoundStore } from "@/store/store";
@@ -29,7 +29,6 @@ export const Stack = () => {
         />
         <div className="mt-20 flex flex-col gap-8">
           <div className="">
-
             <CardStack className="pb-10">
               <CardHeaderStack
                 title={language === "en" ? "My Front-end Skills" : "Mes compétences Front-end"}
@@ -41,22 +40,22 @@ export const Stack = () => {
                 itemsWrapperClassName="animate-move-left [animation-duration:30s]"
               />
               <CardHeaderStack
-                title={language === "en" ? "My Back-end Skills" : "Mes compétences Back-end"}
+                title={language === "en" ? "My Mobile Skills" : "Mes compétences Mobile"}
                 isReversed="center"
                 description={language === "en" ? "Explore the technologies and tools I use to craft expectional digital experiences." : "Découvrez les technologies et les outils que j'utilise"}
               />
               <ToolboxItemsStack
-                items={toolBoxItemsBack}
+                items={toolBoxItemsMobile}
                 className="mt-6"
-                itemsWrapperClassName="-translate-x-1/2 animate-move-right [animation-duration:30s]"
+                itemsWrapperClassName="-translate-x-1/2 animate-move-left [animation-duration:30s]"
               />
               <CardHeaderStack
-                title={language === "en" ? "My DevOps Skills" : "Mes compétences DevOps"}
+                title={language === "en" ? "My Back end Skills" : "Mes compétences Back-end"}
                 isReversed="end"
                 description={language === "en" ? "Explore the technologies and tools I use to craft expectional digital experiences." : "Découvrez les technologies et les outils que j'utilise"}
               />
               <ToolboxItemsStack
-                items={toolBoxItemsDevOps}
+                items={toolBoxItemsBack}
                 itemsWrapperClassName="animate-move-left [animation-duration:30s]"
               />
             </CardStack>

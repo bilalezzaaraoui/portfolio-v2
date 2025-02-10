@@ -33,7 +33,7 @@ export const CardHeaderStack: FC<CardHeaderProps> = ({
     <div className={twMerge(`flex flex-col pt-16 px-6 pb-6 ${isReversed ? "justify-end" : ""}`, className)}>
       <div className={isReversedCss}>
         <div className={`inline-flex items-center gap-2`}>
-          <StarIcon className="size-9 text-emerald-300" />
+          <StarIcon className="size-9 text-cyan-300" />
           <h3 className="font-serif text-3xl">{title}</h3>
         </div>
         {/* <p className={`text-sm lg:text-base max-w-xs text-white/60 mt-2 ${isReversedCssTwo}`}>

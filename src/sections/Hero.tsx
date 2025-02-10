@@ -149,11 +149,9 @@ export const Hero = () => {
               <GithubTwo className="size-4" />
             </Button>
           </a>
-          <a href={language === "en" ? "/Resume%20Bilal%20EZZAARAOUI.pdf" : "cv-fr.pdf"} download={language === "en" ? "Resume Bilal EZZAARAOUI.pdf" : "CV Bilal EZZAARAOUI"}>
-            <Button variant="secondary">
+          <a href={language === "en" ? "/Resume%20Bilal%20EZZAARAOUI.pdf" : "cv-fr.pdf"} download={language === "en" ? "Resume Bilal EZZAARAOUI.pdf" : "CV Bilal EZZAARAOUI.pdf"} className="btn btn-secondary">
               <span>👋</span>
               <span className="font-semibold">{language === "en" ? "Download Resume" : "Télécharger mon CV"}</span>
-            </Button>
           </a>
         </div>
       </div>

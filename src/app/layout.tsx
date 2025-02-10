@@ -7,6 +7,7 @@ import { useBoundStore } from "@/store/store";
 
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+
 const calistoga = Calistoga({
   subsets: ["latin"],
   variable: "--font-serif",
@@ -14,8 +15,8 @@ const calistoga = Calistoga({
 });
 
 export const metadata: Metadata = {
-  title: "Developpeur full-stack: Portfolio de Bilal Ezzaaraoui",
-  description: "Vous êtes à la recherche d'un développeur full-stack ? Alliant expertise technique et créativité, vous trouverez ici mon portfolio.",
+  title: "Developpeur React & React Native: Portfolio de Bilal Ezzaaraoui",
+  description: "Vous êtes à la recherche d'un développeur React & React Native ? Alliant expertise technique et créativité, vous trouverez ici mon portfolio.",
 };
 
 export default function RootLayout({

@@ -129,7 +129,7 @@ export const Hero = () => {
         <div className="max-w-xl mx-auto">
         <h1 className="text-3xl md:text-5xl font-serif text-center mt-8">
           <span>Bilal EZZAARAOUI,</span><br />
-          <span>{language === "en" ? "React.js & React Native Developer" : "Développeur React.js & React Native"}</span>
+          <span>{language === "en" ? "React Native & React.js Developer" : "Développeur React Native & React.js"}</span>
         </h1>
 
           <p className="md:text-lg text-center text-white/60 mt-4">

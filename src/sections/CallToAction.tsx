@@ -23,7 +23,7 @@ export const CallToAction = () => {
                {language === "en" ? "Do you want me to join your team?" : "Envie que j'intégre votre équipe?"}
               </h2>
               <p className="text-sm md:text-base mt-2">
-                {language === "en" ? "If you need a disciplined, curious React js & React native developer with a true team spirit, do not hesitate to contact me." : "Si vous avez besoin d'un développeur React & React native discipliné, curieux avec un réel esprit d'équipe, n'hésitez pas à me contacter."}
+                {language === "en" ? "If you need a disciplined, curious React native & React js developer with a true team spirit, do not hesitate to contact me." : "Si vous avez besoin d'un développeur React native & React discipliné, curieux avec un réel esprit d'équipe, n'hésitez pas à me contacter."}
               </p>
             </div>
             <div>

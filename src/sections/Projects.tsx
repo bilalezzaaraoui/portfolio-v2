@@ -14,9 +14,9 @@ export const Projects = () => {
 
   const portfolioProjects = [
     {
-      company: language === "en" ? "Maxing Us - Personal Project" : "Maxing Us - Projet personnel",
+      company: language === "en" ? "Maxing Us" : "Maxing Us",
       year: "2024",
-      title: language === "en" ? "My last app mobile" : "Ma dernière application mobile",
+      title: language === "en" ? "React native & Expo Developer" : "Développeur React Native & Expo",
       results: [
         { 
           title: language === "en" ? 

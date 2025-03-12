@@ -9,9 +9,14 @@ import {
   GrainImage,
   StarIcon,
   SprakleIcon,
-  GithubTwo
+  GithubTwo,
 } from "@/assets";
 import { useBoundStore } from "@/store/store";
+
+// Updated PDF imports to use Next.js public directory
+// These files will be available at the root URL during runtime
+const CvFr = "/cv-fr.pdf";
+const CvEn = "/cv-en.pdf";
 
 export const Hero = () => {
   const language = useBoundStore((state) => state.language);
@@ -122,36 +127,61 @@ export const Hero = () => {
               <div className="absolute inset-0 bg-green-500 rounded-full animate-ping-long"></div>
             </div>
             <span className="text-sm font-medium">
-              {language === "en" ? "Seeking employment" : "À la recherche d'un emploi"}
+              {language === "en"
+                ? "Seeking employment"
+                : "À la recherche d'un emploi"}
             </span>
           </div>
         </div>
         <div className="max-w-xl mx-auto">
-        <h1 className="text-3xl md:text-5xl font-serif text-center mt-8">
-          <span>Bilal EZZAARAOUI,</span><br />
-          <span>{language === "en" ? "React Native & React.js Developer" : "Développeur React Native & React.js"}</span>
-        </h1>
+          <h1 className="text-3xl md:text-5xl font-serif text-center mt-8">
+            <span>Bilal EZZAARAOUI,</span>
+            <br />
+            <span>
+              {language === "en"
+                ? "React Native & React.js Developer"
+                : "Développeur React Native & React.js"}
+            </span>
+          </h1>
 
           <p className="md:text-lg text-center text-white/60 mt-4">
-            {language === "en" ? `Passionate about code and the creation of high-performance and aesthetically pleasing web and mobile applications.` : "Passionné par le code et la création d'applications web et mobile performantes et esthétiques."}
+            {language === "en"
+              ? `Passionate about code and the creation of high-performance and aesthetically pleasing web and mobile applications.`
+              : "Passionné par le code et la création d'applications web et mobile performantes et esthétiques."}
           </p>
           <p className="md:text-lg text-center text-white/60 mt-4">
-            {language === "en" ? `Experienced in React, React Native, and Expo, I transform challenges into applications that meet a need.` : "Expérimenté en React, React Native et Expo, je transforme les problématiques en application répondant à un besoin."}
+            {language === "en"
+              ? `Experienced in React, React Native, and Expo, I transform challenges into applications that meet a need.`
+              : "Expérimenté en React, React Native et Expo, je transforme les problématiques en application répondant à un besoin."}
           </p>
           <p className="md:text-lg text-center text-white/60 mt-4">
-            {language === "en" ? `Ready to work together?` : "Prêt à travailler ensemble ?"}
+            {language === "en"
+              ? `Ready to work together?`
+              : "Prêt à travailler ensemble ?"}
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-8">
           <a href="https://github.com/bilalezzaaraoui" target="_blank">
             <Button variant="primary">
-              <span className="font-semibold">{language === "en" ? "My Github Profile" : "Mon profil Github"}</span>
+              <span className="font-semibold">
+                {language === "en" ? "My Github Profile" : "Mon profil Github"}
+              </span>
               <GithubTwo className="size-4" />
             </Button>
           </a>
-          <a href={language === "en" ? "/Resume%20Bilal%20EZZAARAOUI.pdf" : "cv-fr.pdf"} download={language === "en" ? "Resume Bilal EZZAARAOUI.pdf" : "CV Bilal EZZAARAOUI.pdf"} className="btn btn-secondary">
-              <span>👋</span>
-              <span className="font-semibold">{language === "en" ? "Download Resume" : "Télécharger mon CV"}</span>
+          <a
+            href={language === "en" ? CvEn : CvFr}
+            download={
+              language === "en"
+                ? "Resume Bilal EZZAARAOUI.pdf"
+                : "CV Bilal EZZAARAOUI.pdf"
+            }
+            className="btn btn-secondary"
+          >
+            <span>👋</span>
+            <span className="font-semibold">
+              {language === "en" ? "Download Resume" : "Télécharger mon CV"}
+            </span>
           </a>
         </div>
       </div>

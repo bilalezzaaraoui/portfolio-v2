@@ -5,9 +5,8 @@ import { useEffect, useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { useBoundStore } from "@/store/store";
 import Image from "next/image";
-import FlagFrance from "@/assets/images/flag-france.webp";
-import FlagEngland from "@/assets/images/flag-england.webp";
-
+import FlagFrance from "@/assets/images/flag-fr.png";
+import FlagEngland from "@/assets/images/flag-us.png";
 
 export const Header = () => {
   const pathname = usePathname();
@@ -40,7 +39,8 @@ export const Header = () => {
             className={twMerge(
               "nav-item",
               activeLink === item.href && "active",
-              (item.title === "Home" || item.title === "Accueil") && "hidden sm:block",
+              (item.title === "Home" || item.title === "Accueil") &&
+                "hidden sm:block"
             )}
             onClick={() => setActiveLink(item.href)}
           >
@@ -49,23 +49,24 @@ export const Header = () => {
         ))}
       </nav>
       <button
-            onClick={setTranslationCallback}
-            className="items-center gap-1.5 group relative cursor-pointer
-   left-4 flex">
-            <Image
-                src={language === "en" ? FlagFrance : FlagEngland}
-                alt="flag"
-                style={{
-                  width: "30px",
-                  height: "30px",
-                  borderRadius: "60px",
-                  border: "3px solid white"
-                }}
-              />
+        onClick={setTranslationCallback}
+        className="items-center gap-1.5 group relative cursor-pointer
+   left-4 flex"
+      >
+        <Image
+          src={language === "en" ? FlagFrance : FlagEngland}
+          alt="flag"
+          style={{
+            width: "30px",
+            height: "30px",
+            borderRadius: "60px",
+            border: "3px solid white",
+          }}
+        />
 
-            {/* <span className="font-semibold">{language === "en" ? "fr".toUpperCase() : "en".toUpperCase()}</span>
+        {/* <span className="font-semibold">{language === "en" ? "fr".toUpperCase() : "en".toUpperCase()}</span>
             <span className="absolute -bottom-1 left-0 w-full h-[1px] bg-transparent group-hover:bg-white transition-all duration-300"></span> */}
-        </button>
+      </button>
     </header>
   );
 };

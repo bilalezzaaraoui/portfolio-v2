@@ -139,8 +139,8 @@ export const Hero = () => {
             <br />
             <span>
               {language === "en"
-                ? "React Native & React.js Developer"
-                : "Développeur React Native & React.js"}
+                ? "Frontend engineer & React Native developer"
+                : "Développeur Frontend & Développeur React Native"}
             </span>
           </h1>
 

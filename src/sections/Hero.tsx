@@ -120,7 +120,7 @@ export const Hero = () => {
           <Image
             src={EmojiComputerImage}
             alt="Emoji Computer"
-            className="size-[150px] rounded-full mb-[-2rem] border-4 border-white"
+            className="size-[150px] rounded-full mb-[-1rem] border-4 border-white"
           />
           <div className="inline-flex items-center gap-4 px-4 py-1.5 bg-gray-950 border border-gray-800 rounded-lg">
             <div className="bg-green-500 size-2.5 rounded-full relative">

@@ -19,8 +19,11 @@ export const Experience = () => {
     // },
     {
       name: "Paul-Jean Poirson",
-      position: "CTO @ Luxeol",
-      text: language === "en" ? "Bilal's expertise in front-end development was critical in optimizing our web applications. His ability to enhance performance while collaborating effectively with the team made a significant impact." : "L'expertise de Bilal en développement front-end a été cruciale pour optimiser nos applications web. Sa capacité à améliorer les performances tout en collaborant efficacement avec l'équipe a eu un impact significatif.",
+      position: "CTO @ Nutravalia",
+      text:
+        language === "en"
+          ? "Bilal's front-end expertise was critical to optimizing our web applications. His ability to boost performance while collaborating effectively with the team made a real impact."
+          : "L'expertise front-end de Bilal a été déterminante pour optimiser nos applications web. Sa capacité à améliorer les performances tout en collaborant efficacement avec l'équipe a eu un vrai impact.",
       avatar: Avatar5,
     },
     // {
@@ -31,10 +34,16 @@ export const Experience = () => {
     // },
     {
       name: "Raphaël Bellon",
-      position: language === "en" ? "Lead Developer @ Luxeol" : "Lead Developpeur @ Luxeol" ,
-      text: language === "en" ? "Working with Bilal was seamless. His expertise in integrating APIs and improving our web app’s responsiveness was essential to the success of our projects." : "Travailler avec Bilal était sans accroc. Son expertise dans l'intégration d'API et l'amélioration de la réactivité de notre application web était essentielle à la réussite de nos projets.",
+      position:
+        language === "en"
+          ? "Lead Developer @ Luxéol"
+          : "Lead Développeur @ Luxéol",
+      text:
+        language === "en"
+          ? "Working with Bilal was seamless. His skill at integrating APIs and improving our app's responsiveness was key to the success of our projects."
+          : "Travailler avec Bilal a été sans accroc. Son aisance à intégrer des API et à améliorer la réactivité de notre application a été déterminante dans la réussite de nos projets.",
       avatar: Avatar1,
-    }
+    },
   ];
 
   return (
@@ -42,8 +51,16 @@ export const Experience = () => {
       <div className="container">
         <SectionHeader
           eyebrow={language === "en" ? "My Experience" : "Mon expérience"}
-          title={language === "en" ? "I’ve had the chance to work with talented teams on a variety of projects" : "J'ai eu la chance de travailler avec des équipes talentueuses sur des projets variés"}
-          description={language === "en" ? "Discover my journey up to our meeting" : "Décourez mon parcours jusqu'à notre rencontre"}
+          title={
+            language === "en"
+              ? "I've worked with talented teams on a variety of projects"
+              : "J'ai travaillé avec des équipes talentueuses sur des projets variés"
+          }
+          description={
+            language === "en"
+              ? "A glimpse of the journey that got me here."
+              : "Un aperçu du parcours qui m'a mené jusqu'ici."
+          }
         />
         <div className="mt-12 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] py-4 -my-4">
           <div className="flex flex-none gap-8 pr-8 animate-move-left [animation-duration:90s] hover:[animation-play-state:paused]">

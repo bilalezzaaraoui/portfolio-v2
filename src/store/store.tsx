@@ -1,17 +1,14 @@
-import { create } from 'zustand'
+import { create } from "zustand";
+import { DEFAULT_LANGUAGE, type Language } from "@/config/language";
 
+export type { Language };
 
 interface Store {
-    language: string // 'fr' | 'en'
-    setTranslation: (language: string) => void
-}
-
-const store = {
-  language: "fr",
-  setTranslation: (set: any) => (language: string) => set({ language }),
+  language: Language;
+  setTranslation: (language: Language) => void;
 }
 
 export const useBoundStore = create<Store>((set) => ({
-    ...store,
-    setTranslation: store.setTranslation(set),
-  }));
+  language: DEFAULT_LANGUAGE,
+  setTranslation: (language) => set({ language }),
+}));

@@ -8,7 +8,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { ToolboxItems } from "@/components/ToolboxItems";
 import { toolBoxItemsSoftSkillsFr } from "@/data/data";
 import { toolBoxItemsSoftSkillsEn } from "@/data/data";
-import { BookCoverImage, MapImageTh, MapImageFr, EmojiSmileImage } from "@/assets";
+import { BookCoverImage, MapImageBangkok, EmojiSmileImage } from "@/assets";
 import { useRef } from "react";
 import { useBoundStore } from "@/store/store";
 
@@ -59,12 +59,12 @@ export const About = () => {
               />
               <ToolboxItems
                 items={language === "en" ? toolBoxItemsSoftSkillsEn : toolBoxItemsSoftSkillsFr}
-                itemsWrapperClassName="animate-move-left [animation-duration:30s]"
+                itemsWrapperClassName="animate-move-left [animation-duration:60s]"
               />
               <ToolboxItems
                 items={language === "en" ? toolBoxItemsSoftSkillsEn : toolBoxItemsSoftSkillsFr}
                 className="mt-6"
-                itemsWrapperClassName="-translate-x-1/2 animate-move-right [animation-duration:30s]"
+                itemsWrapperClassName="-translate-x-1/2 animate-move-right [animation-duration:60s]"
               />
             </Card>
           </div>
@@ -98,10 +98,20 @@ export const About = () => {
             </Card>
             <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
               <Image
-                src={language === "en" ? MapImageTh : MapImageFr}
-                alt="map"
+                src={MapImageBangkok}
+                alt={language === "en" ? "Map of Bangkok" : "Carte de Bangkok"}
                 className="size-full object-cover object-left-top"
               />
+              {/* Les tuiles proviennent d'OpenStreetMap : la licence ODbL impose
+                  de créditer les contributeurs partout où elles sont affichées. */}
+              <a
+                href="https://www.openstreetmap.org/copyright"
+                target="_blank"
+                rel="noreferrer"
+                className="absolute bottom-1 right-2 text-[10px] text-gray-950/50 hover:text-gray-950"
+              >
+                © OpenStreetMap
+              </a>
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full after:content-[''] after:absolute after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
                 <div className="absolute inset-0 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full -z-20 animate-ping [animation-duration:2s]"></div>
                 <div className="absolute inset-0 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full -z-10"></div>

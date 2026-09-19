@@ -46,3 +46,7 @@ export { default as ZustandIcon } from "@/assets/icons/zustand.svg";
 export { default as ReanimatedIcon } from "@/assets/icons/reanimated-logo.svg";
 export { default as FirebaseIcon } from "@/assets/icons/firebase-icon.svg";
 export { default as SupabaseIcon } from "@/assets/icons/supabase-icon.svg";
+export { default as N8nIcon } from "@/assets/icons/n8n.svg";
+export { default as OpenAiIcon } from "@/assets/icons/openai.svg";
+export { default as GeminiIcon } from "@/assets/icons/gemini.svg";
+export { default as MapImageBangkok } from "@/assets/images/map-bangkok.png";

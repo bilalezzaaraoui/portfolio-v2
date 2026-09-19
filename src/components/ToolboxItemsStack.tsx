@@ -4,7 +4,7 @@ import { twMerge } from "tailwind-merge";
 
 interface ToolBoxItemProps {
   title: string;
-  iconType: React.ElementType;
+  iconType?: React.ElementType;
 }
 
 interface ToolboxItemsProps {
@@ -31,12 +31,15 @@ export const ToolboxItemsStack: FC<ToolboxItemsProps> = ({
           itemsWrapperClassName,
         )}
       >
-        {[...items, ...items].map((item, index) => (
+        {/* Quatre copies : le défilement translate de -50% de la largeur totale,
+            soit deux copies. Les deux restantes couvrent toujours la carte, même
+            pour les listes courtes, donc la boucle reste sans trou. */}
+        {[...items, ...items, ...items, ...items].map((item, index) => (
           <div
             key={index}
             className="inline-flex items-center gap-4 px-3 py-2 outline outline-2 outline-white/10 rounded-lg"
           >
-            {item.title !== "Zustand" && item.title !== "React native testing" && <TechIcon component={item.iconType} />}
+            {item.iconType && <TechIcon component={item.iconType} />}
             <span className="font-semibold">{item.title}</span>
           </div>
         ))}

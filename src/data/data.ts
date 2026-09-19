@@ -34,42 +34,39 @@ import {
   ZustandIcon,
   ReanimatedIcon,
   FirebaseIcon,
-  SupabaseIcon
+  SupabaseIcon,
+  N8nIcon,
+  OpenAiIcon,
+  GeminiIcon
 } from "@/assets";
 
 
 export const toolBoxItemsFront = [
   { title: "TypeScript", iconType: TypescriptIcon },
-  { title: "React Js", iconType: ReactIcon },
+  { title: "React", iconType: ReactIcon },
   { title: "Redux", iconType: ReduxIcon },
   { title: "React Query", iconType: ReactQuery },
-  { title: "Tailwind", iconType: TailwindIcon },
-  { title: "Jest", iconType: JestIcon },
-  { title: "Cypress", iconType: CypressIcon },
-  { title: "GitHub Actions", iconType: GithubIcon },
+  // Le logo Zustand est une illustration multicolore : illisible avec le
+  // dégradé cyan des icônes, on affiche donc le libellé seul.
+  { title: "Zustand", iconType: undefined },
+  { title: "Tailwind CSS", iconType: TailwindIcon },
 ];
 
 export const toolBoxItemsMobile = [
   { title: "TypeScript", iconType: TypescriptIcon },
   { title: "React Native", iconType: ReactIcon },
   { title: "Expo", iconType: ExpoIcon },
-  { title: "Expo EAS", iconType: ExpoEasIcon },
+  { title: "Expo Router", iconType: ExpoIcon },
   { title: "Tailwind", iconType: TailwindIcon },
-  { title: "Zustand", iconType: ZustandIcon },
-  { title: "React Query", iconType: ReactQuery },
-  { title: "Reanimated", iconType: ReanimatedIcon },
-  { title: "Jest", iconType: JestIcon },
-  { title: "React native testing", iconType: JestIcon },
-  { title: "GitHub Actions", iconType: GithubIcon },
+  { title: "Zustand", iconType: undefined },
 ];
 
 export const toolBoxItemsBack = [
   { title: "Supabase", iconType: SupabaseIcon },
-  { title: "Firebase", iconType: FirebaseIcon },
-  { title: "Supabase", iconType: SupabaseIcon },
-  { title: "Firebase", iconType: FirebaseIcon },
-  { title: "Supabase", iconType: SupabaseIcon },
-  { title: "Firebase", iconType: FirebaseIcon },
+  { title: "n8n", iconType: N8nIcon },
+  { title: "OpenAI", iconType: OpenAiIcon },
+  { title: "Gemini", iconType: GeminiIcon },
+  { title: "REST APIs", iconType: ApiIcon },
 ];
 
 export const toolBoxItemsSoftSkillsFr = [

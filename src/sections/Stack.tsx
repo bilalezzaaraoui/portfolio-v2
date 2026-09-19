@@ -30,12 +30,12 @@ export const Stack = () => {
           title={
             language === "en"
               ? "Take a look at my stack"
-              : "Jeter un oeil à ma stack"
+              : "Jetez un œil à ma stack"
           }
           description={
             language === "en"
-              ? "And discover the tools that will help you achieve your goals"
-              : "Et découvrez les outils qui me permettrons de vous aider à atteindre vos objectifs"
+              ? "The tools I use to turn ideas into fast, reliable products on web and mobile."
+              : "Les outils que j'utilise pour transformer des idées en produits rapides et fiables — sur le web comme sur le mobile."
           }
         />
         <div className="mt-20 flex flex-col gap-8">
@@ -56,7 +56,7 @@ export const Stack = () => {
               />
               <ToolboxItemsStack
                 items={toolBoxItemsFront}
-                itemsWrapperClassName="animate-move-left [animation-duration:30s]"
+                itemsWrapperClassName="animate-move-left [animation-duration:60s]"
               />
               <CardHeaderStack
                 title={
@@ -74,18 +74,23 @@ export const Stack = () => {
               <ToolboxItemsStack
                 items={toolBoxItemsMobile}
                 className="mt-6"
-                itemsWrapperClassName="-translate-x-1/2 animate-move-left [animation-duration:30s]"
+                itemsWrapperClassName="-translate-x-1/2 animate-move-right [animation-duration:60s]"
               />
 
-              {/* <CardHeaderStack
-                title={language === "en" ? "My Back end Skills" : "Mes compétences Back-end"}
-                isReversed="end"
-                description={language === "en" ? "Explore the technologies and tools I use to craft expectional digital experiences." : "Découvrez les technologies et les outils que j'utilise"}
+              <CardHeaderStack
+                title={language === "en" ? "Backend & AI" : "Back-end & IA"}
+                isReversed="start"
+                description={
+                  language === "en"
+                    ? "Explore the technologies and tools I use to craft expectional digital experiences."
+                    : "Découvrez les technologies et les outils que j'utilise"
+                }
               />
               <ToolboxItemsStack
                 items={toolBoxItemsBack}
-                itemsWrapperClassName="animate-move-left [animation-duration:30s]"
-              /> */}
+                className="mt-6"
+                itemsWrapperClassName="animate-move-left [animation-duration:60s]"
+              />
             </CardStack>
           </div>
         </div>

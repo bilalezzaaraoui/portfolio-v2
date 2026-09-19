@@ -127,44 +127,42 @@ export const Hero = () => {
               <div className="absolute inset-0 bg-green-500 rounded-full animate-ping-long"></div>
             </div>
             <span className="text-sm font-medium">
-              {language === "en"
-                ? "Seeking employment"
-                : "À la recherche d'un emploi"}
+              {language === "en" ? "Open to work" : "Ouvert aux opportunités"}
             </span>
           </div>
         </div>
         <div className="max-w-xl mx-auto">
           <h1 className="text-3xl md:text-5xl font-serif text-center mt-8">
-            <span>Bilal EZZAARAOUI,</span>
+            <span>Bilal Ezzaaraoui</span>
             <br />
             <span>
               {language === "en"
-                ? "Frontend engineer & React Native developer"
-                : "Développeur Frontend & Développeur React Native"}
+                ? "Front-End Engineer & React Native Developer"
+                : "Développeur Front-End & React Native"}
             </span>
           </h1>
 
           <p className="md:text-lg text-center text-white/60 mt-4">
             {language === "en"
-              ? `Passionate about code and the creation of high-performance and aesthetically pleasing web and mobile applications.`
-              : "Passionné par le code et la création d'applications web et mobile performantes et esthétiques."}
+              ? "I build web and mobile products end-to-end from pixel-perfect UI to Supabase back-ends and AI-powered features."
+              : "Je construis des produits web et mobile de bout en bout d'une interface au pixel près aux back-ends Supabase et aux fonctionnalités boostées à l'IA."}
           </p>
           <p className="md:text-lg text-center text-white/60 mt-4">
             {language === "en"
-              ? `Experienced in React, React Native, and Expo, I transform challenges into applications that meet a need.`
-              : "Expérimenté en React, React Native et Expo, je transforme les problématiques en application répondant à un besoin."}
+              ? "React, React Native & Expo. A founder's mindset. I don't just ship what's asked I build what moves the metric."
+              : "React, React Native & Expo. Un état d'esprit de fondateur. Je ne livre pas seulement ce qu'on me demande, je construis ce qui fait bouger les chiffres."}
           </p>
           <p className="md:text-lg text-center text-white/60 mt-4">
             {language === "en"
-              ? `Ready to work together?`
-              : "Prêt à travailler ensemble ?"}
+              ? "Ready to build something together?"
+              : "Prêt à construire quelque chose ensemble ?"}
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-8">
           <a href="https://github.com/bilalezzaaraoui" target="_blank">
             <Button variant="primary">
               <span className="font-semibold">
-                {language === "en" ? "My Github Profile" : "Mon profil Github"}
+                {language === "en" ? "My GitHub Profile" : "Mon profil GitHub"}
               </span>
               <GithubTwo className="size-4" />
             </Button>

@@ -1,9 +1,10 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { useBoundStore } from "@/store/store";
+import { IS_LANGUAGE_SWITCHER_ENABLED } from "@/config/language";
 import Image from "next/image";
 import FlagFrance from "@/assets/images/flag-fr.png";
 import FlagEngland from "@/assets/images/flag-us.png";
@@ -11,8 +12,15 @@ import FlagEngland from "@/assets/images/flag-us.png";
 export const Header = () => {
   const pathname = usePathname();
   const [activeLink, setActiveLink] = useState<string>("#");
+  const [lastPathname, setLastPathname] = useState(pathname);
   const setTranslation = useBoundStore((state) => state.setTranslation);
   const language = useBoundStore((state) => state.language);
+
+  // Resynchronise le lien actif quand la route change, sans passer par un effet.
+  if (pathname !== lastPathname) {
+    setLastPathname(pathname);
+    setActiveLink(pathname === "/" ? "#" : pathname);
+  }
 
   const navItems = [
     { href: "#", title: language === "en" ? "Home" : "Accueil" },
@@ -24,10 +32,6 @@ export const Header = () => {
   const setTranslationCallback = () => {
     setTranslation(language === "fr" ? "en" : "fr");
   };
-
-  useEffect(() => {
-    setActiveLink(pathname === "/" ? "#" : pathname);
-  }, [pathname]);
 
   return (
     <header className="fixed flex justify-center items-center top-3 w-full z-10">
@@ -48,25 +52,27 @@ export const Header = () => {
           </Link>
         ))}
       </nav>
-      <button
-        onClick={setTranslationCallback}
-        className="items-center gap-1.5 group relative cursor-pointer
+      {IS_LANGUAGE_SWITCHER_ENABLED && (
+        <button
+          onClick={setTranslationCallback}
+          className="items-center gap-1.5 group relative cursor-pointer
    left-4 flex"
-      >
-        <Image
-          src={language === "en" ? FlagFrance : FlagEngland}
-          alt="flag"
-          style={{
-            width: "30px",
-            height: "30px",
-            borderRadius: "60px",
-            border: "3px solid white",
-          }}
-        />
+        >
+          <Image
+            src={language === "en" ? FlagFrance : FlagEngland}
+            alt="flag"
+            style={{
+              width: "30px",
+              height: "30px",
+              borderRadius: "60px",
+              border: "3px solid white",
+            }}
+          />
 
-        {/* <span className="font-semibold">{language === "en" ? "fr".toUpperCase() : "en".toUpperCase()}</span>
+          {/* <span className="font-semibold">{language === "en" ? "fr".toUpperCase() : "en".toUpperCase()}</span>
             <span className="absolute -bottom-1 left-0 w-full h-[1px] bg-transparent group-hover:bg-white transition-all duration-300"></span> */}
-      </button>
+        </button>
+      )}
     </header>
   );
 };

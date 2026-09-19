@@ -26,7 +26,7 @@ export const CallToAction = () => {
               </h2>
               <p className="text-sm md:text-base mt-2">
                 {language === "en"
-                  ? "If you're looking for a curious, disciplined React & React Native engineer with real product and shipping instincts, let's talk."
+                  ? "If you're looking for a curious, disciplined React & React Native engineer with real product and shipping instincts — let's talk."
                   : "Si vous cherchez un développeur React & React Native curieux et rigoureux, avec un vrai instinct produit et le goût de livrer — parlons-en."}
               </p>
             </div>

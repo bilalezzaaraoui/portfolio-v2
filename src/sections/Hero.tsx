@@ -5,7 +5,6 @@ import HeroOrbit from "@/components/HeroOrbit";
 import HeroRing from "@/components/HeroRing";
 import {
   EmojiComputerImage,
-  ArrowDownIcon,
   GrainImage,
   StarIcon,
   SprakleIcon,
@@ -144,12 +143,12 @@ export const Hero = () => {
 
           <p className="md:text-lg text-center text-white/60 mt-4">
             {language === "en"
-              ? "I build web and mobile products end-to-end from pixel-perfect UI to Supabase back-ends and AI-powered features."
+              ? "I build web and mobile products end-to-end — from pixel-perfect UI to Supabase back-ends and AI-powered features."
               : "Je construis des produits web et mobile de bout en bout d'une interface au pixel près aux back-ends Supabase et aux fonctionnalités boostées à l'IA."}
           </p>
           <p className="md:text-lg text-center text-white/60 mt-4">
             {language === "en"
-              ? "React, React Native & Expo. A founder's mindset. I don't just ship what's asked I build what moves the metric."
+              ? "React, React Native & Expo. A founder's mindset. I don't just ship what's asked — I build what moves the metric."
               : "React, React Native & Expo. Un état d'esprit de fondateur. Je ne livre pas seulement ce qu'on me demande, je construis ce qui fait bouger les chiffres."}
           </p>
           <p className="md:text-lg text-center text-white/60 mt-4">

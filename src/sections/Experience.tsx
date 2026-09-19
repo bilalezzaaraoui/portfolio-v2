@@ -4,19 +4,13 @@ import { SectionHeader } from "@/components/SectionHeader";
 import Image from "next/image";
 import { Card } from "@/components/Card";
 import { Fragment } from "react";
-import { Avatar1, Avatar2, Avatar4, Avatar5 } from "@/assets";
+import { Avatar1, Avatar5 } from "@/assets";
 import { useBoundStore } from "@/store/store";
 
 export const Experience = () => {
   const language = useBoundStore((state) => state.language);
 
   const testimonials = [
-    // {
-    //   name: "Sophie Martin",
-    //   position: "Lead developper @ Orange",
-    //   text: "Bilal is a talented developer who greatly improved our product's technical infrastructure. His work on refactoring our codebase helped us reduce technical debt and improve maintainability.",
-    //   avatar: Avatar2,
-    // },
     {
       name: "Paul-Jean Poirson",
       position: "CTO @ Nutravalia",
@@ -26,12 +20,6 @@ export const Experience = () => {
           : "L'expertise front-end de Bilal a été déterminante pour optimiser nos applications web. Sa capacité à améliorer les performances tout en collaborant efficacement avec l'équipe a eu un vrai impact.",
       avatar: Avatar5,
     },
-    // {
-    //   name: "Étienne Gauttier",
-    //   position: "Lead UX Designer @ Orange",
-    //   text: "Bilal’s collaborative spirit and full stack development skills significantly enhanced the user experience on our platform. He always delivered clean and efficient code, making our designs come to life.",
-    //   avatar: Avatar4,
-    // },
     {
       name: "Raphaël Bellon",
       position:
@@ -63,8 +51,8 @@ export const Experience = () => {
           }
         />
         <div className="mt-12 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] py-4 -my-4">
-          <div className="flex flex-none gap-8 pr-8 animate-move-left [animation-duration:90s] hover:[animation-play-state:paused]">
-            {[...new Array(2)].fill(0).map((_, index) => (
+          <div className="flex flex-none gap-8 pr-8 animate-move-left [animation-duration:180s] hover:[animation-play-state:paused]">
+            {[...new Array(4)].fill(0).map((_, index) => (
               <Fragment key={index}>
                 {testimonials.map((testimonial, index) => (
                   <Card

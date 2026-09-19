@@ -1,25 +1,17 @@
 "use client";
 
-import Image from "next/image";
-import { motion } from "framer-motion";
 import { CardStack } from "@/components/CardStack";
 import { CardHeaderStack } from "@/components/CardHeaderStack";
 import { SectionHeader } from "@/components/SectionHeader";
-import { ToolboxItemsStack } from "@/components/ToolboxItemsStack";
-import { toolBoxItemsFront } from "@/data/data";
-import { toolBoxItemsMobile } from "@/data/data";
-import { toolBoxItemsBack } from "@/data/data";
+import { ToolboxItems } from "@/components/ToolboxItems";
 import {
-  BookCoverImage,
-  MapImageTh,
-  MapImageFr,
-  EmojiSmileImage,
-} from "@/assets";
-import { useRef } from "react";
+  toolBoxItemsFront,
+  toolBoxItemsMobile,
+  toolBoxItemsBack,
+} from "@/data/data";
 import { useBoundStore } from "@/store/store";
 
 export const Stack = () => {
-  const constraintRef = useRef<HTMLDivElement>(null);
   const language = useBoundStore((state) => state.language);
 
   return (
@@ -34,7 +26,7 @@ export const Stack = () => {
           }
           description={
             language === "en"
-              ? "The tools I use to turn ideas into fast, reliable products on web and mobile."
+              ? "The tools I use to turn ideas into fast, reliable products — on web and mobile."
               : "Les outils que j'utilise pour transformer des idées en produits rapides et fiables — sur le web comme sur le mobile."
           }
         />
@@ -47,14 +39,9 @@ export const Stack = () => {
                     ? "My Frontend Skills"
                     : "Mes compétences Front-end"
                 }
-                isReversed="start"
-                description={
-                  language === "en"
-                    ? "Explore the technologies and tools I use to craft expectional digital experiences."
-                    : "Découvrez les technologies et les outils que j'utilise"
-                }
+                align="start"
               />
-              <ToolboxItemsStack
+              <ToolboxItems
                 items={toolBoxItemsFront}
                 itemsWrapperClassName="animate-move-left [animation-duration:60s]"
               />
@@ -64,14 +51,9 @@ export const Stack = () => {
                     ? "My Mobile Skills"
                     : "Mes compétences Mobile"
                 }
-                isReversed="end"
-                description={
-                  language === "en"
-                    ? "Explore the technologies and tools I use to craft expectional digital experiences."
-                    : "Découvrez les technologies et les outils que j'utilise"
-                }
+                align="end"
               />
-              <ToolboxItemsStack
+              <ToolboxItems
                 items={toolBoxItemsMobile}
                 className="mt-6"
                 itemsWrapperClassName="-translate-x-1/2 animate-move-right [animation-duration:60s]"
@@ -79,14 +61,9 @@ export const Stack = () => {
 
               <CardHeaderStack
                 title={language === "en" ? "Backend & AI" : "Back-end & IA"}
-                isReversed="start"
-                description={
-                  language === "en"
-                    ? "Explore the technologies and tools I use to craft expectional digital experiences."
-                    : "Découvrez les technologies et les outils que j'utilise"
-                }
+                align="start"
               />
-              <ToolboxItemsStack
+              <ToolboxItems
                 items={toolBoxItemsBack}
                 className="mt-6"
                 itemsWrapperClassName="animate-move-left [animation-duration:60s]"

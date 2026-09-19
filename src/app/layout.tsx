@@ -15,8 +15,9 @@ const calistoga = Calistoga({
 });
 
 export const metadata: Metadata = {
-  title: "Developpeur React Native & React.js : Portfolio de Bilal Ezzaaraoui",
-  description: "Vous êtes à la recherche d'un développeur React Native & React.js ? Alliant expertise technique et créativité, vous trouverez ici mon portfolio.",
+  title: "Bilal Ezzaaraoui — Front-End Engineer & React Native Developer",
+  description:
+    "Portfolio of Bilal Ezzaaraoui, front-end engineer. I build web and mobile products end-to-end with React, React Native and Supabase — from pixel-perfect UI to AI-powered features.",
 };
 
 export default function RootLayout({

@@ -2,7 +2,6 @@
 
 import { ArrowUpRightIcon } from "@/assets";
 import Link from "next/link";
-import { use, useEffect } from "react";
 import { useBoundStore } from "@/store/store";
 
 const navItems = [
@@ -12,6 +11,7 @@ const navItems = [
 
 export const Footer = () => {
   const language = useBoundStore((state) => state.language);
+  const year = new Date().getFullYear();
 
 
   return (
@@ -21,8 +21,8 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-row md:justify-between items-center gap-8 border-t border-white/15 py-6 text-sm">
           <p className="text-white/40">
             {language === "en"
-              ? "© 2026 Bilal Ezzaaraoui · Built with React"
-              : "© 2026 Bilal Ezzaaraoui · Réalisé avec React"}
+              ? `© ${year} Bilal Ezzaaraoui · Built with React`
+              : `© ${year} Bilal Ezzaaraoui · Réalisé avec React`}
           </p>
           <nav className="flex flex-col md:flex-row items-center gap-8">
             {navItems.map((item, index) => (

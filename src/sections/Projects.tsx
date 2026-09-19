@@ -43,7 +43,7 @@ export const Projects = () => {
         {
           title:
             language === "en"
-              ? "Sold and delivered the product end-to-end a founder-built system driving real revenue."
+              ? "Sold and delivered the product end-to-end — a founder-built system driving real revenue."
               : "Produit vendu et livré de bout en bout — un système conçu seul, qui génère un vrai chiffre d'affaires.",
         },
       ],
@@ -61,7 +61,7 @@ export const Projects = () => {
         {
           title:
             language === "en"
-              ? "The tooling I built helped generate more than 70 new clients around €210k in total contract value."
+              ? "The tooling I built helped generate more than 70 new clients — around €210k in total contract value."
               : "Les outils que j'ai construits ont contribué à générer plus de 70 nouveaux clients, soit environ 210 k€ de valeur contractuelle totale.",
         },
       ],
@@ -90,7 +90,7 @@ export const Projects = () => {
         {
           title:
             language === "en"
-              ? "Reached 1,000+ users in the first month 100% organic (TikTok, Reddit, DMs)."
+              ? "Reached 1,000+ users in the first month — 100% organic (TikTok, Reddit, DMs)."
               : "Plus de 1 000 utilisateurs dès le premier mois — 100 % organique (TikTok, Reddit, DM).",
         },
       ],
@@ -121,7 +121,7 @@ export const Projects = () => {
         {
           title:
             language === "en"
-              ? "Turned UX/UI wireframes into functional, polished front-end solutions contributing to +35% average order value and +15% LTV."
+              ? "Turned UX/UI wireframes into functional, polished front-end solutions — contributing to +35% average order value and +15% LTV."
               : "Transformation des maquettes UX/UI en interfaces fonctionnelles et soignées — contribuant à +35 % de panier moyen et +15 % de LTV.",
         },
       ],
@@ -180,14 +180,18 @@ export const Projects = () => {
                       </li>
                     ))}
                   </ul>
-                  {/* <Link
-                    href={project.link}
-                    className="btn btn-secondary text-gray-950 justify-center w-full mt-8 md:w-auto"
-                    target="_blank"
-                  >
-                    <span className="font-semibold">Visit Live Site</span>
-                    <ArrowUpRightIcon className="size-4" />
-                  </Link> */}
+                  {project.link && (
+                    <Link
+                      href={project.link}
+                      className="btn btn-secondary text-gray-950 justify-center w-full mt-8 md:w-auto"
+                      target="_blank"
+                    >
+                      <span className="font-semibold">
+                        {language === "en" ? "Visit Live Site" : "Voir le site"}
+                      </span>
+                      <ArrowUpRightIcon className="size-4" />
+                    </Link>
+                  )}
                 </div>
                 {project.image && (
                   <div className="relative">
